@@ -27,7 +27,9 @@ export default function HeaderWithTitle({
                 switch (buttonIndex) {
                     case 1:
                         router.push("/");
-                        router.dismissAll();
+                        if (router.canDismiss()) {
+                            router.dismissAll();
+                        }
                         break;
                     case 2:
                         router.push("/about");

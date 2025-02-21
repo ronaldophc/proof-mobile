@@ -11,7 +11,7 @@ type ImageButtonProps = {
 export default function ImageButton({onPress, source}: ImageButtonProps) {
   return (
     <TouchableOpacity onPress={onPress} style={styles.container}>
-        <Image style={styles.image} source={{uri:source}}/>
+        <Image style={styles.image} source={{uri:source}} testID="image-button-image"/>
         <View style={styles.overlay}>
             <Text style={styles.text}>Entrar</Text>
         </View>
