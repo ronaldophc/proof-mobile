@@ -49,7 +49,7 @@ export default function HeaderWithTitle({
                     fontWeight: "bold",
                 },
                 headerRight: () => (
-                    <TouchableOpacity onPress={handleOpen}>
+                    <TouchableOpacity onPress={handleOpen} testID="header-right-button">
                         <Ionicons name="list" size={32} color="#ffb703" />
                     </TouchableOpacity>
                 ),

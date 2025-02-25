@@ -1,0 +1,9 @@
+appId: com.proof.app
+---
+- openLink: exp://127.0.0.1:8081
+- tapOn:
+    id: "image-button-image"
+- tapOn:
+    id: "header-right-button"
+- tapOn: "Sobre"
+- tapOn: "GitHub"
